@@ -1,11 +1,11 @@
 # WWDC25 Vision Pro-Inspired UI
-SwiftUI app with translucent interface design mimicking Apple's Vision Pro aesthetic.
+SwiftUI app with a translucent interface design that mimics Apple's Vision Pro aesthetic.
 
 ## Features
 
 - Glossy floating icons with glass morphism effects
 - Translucent menu system with contextual items
-- OS updates grid for iOS 19, iPadOS 19, macOS 16, watchOS 12, tvOS 19, visionOS 3
+- OS updates grid for iOS 26, iPadOS 26, macOS 26, watchOS 26, tvOS 26, visionOS 26
 - Purple gradient background with rainbow header
 - Frosted glass panels throughout
 
