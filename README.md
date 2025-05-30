@@ -12,5 +12,5 @@ SwiftUI app with a translucent interface design that mimics Apple's Vision Pro a
 
 -------
 <div align="center">
- <img width="379" alt="iPhone mockup showing WWDC25 app interface with Vision Pro-inspired design, featuring translucent purple UI, rainbow gradient header, glossy menu items, and OS update icons grid" src="https://github.com/user-attachments/assets/8afec067-e6df-48e9-bd18-6c22e48c9e81">
+ <img width="379" alt="iPhone mockup showing WWDC25 app interface with Vision Pro-inspired design, featuring translucent purple UI, rainbow gradient header, glossy menu items, and OS update icons grid" src="https://github.com/user-attachments/assets/7b1e5bb6-1a38-47f4-b119-3e49491c6479">
 </div>
