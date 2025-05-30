@@ -11,7 +11,8 @@ struct OSUpdatesGridView: View {
   
   var body: some View {
     LazyVGrid(columns: columns, spacing: 20) {
-      ForEach(wwdcFeatures) { feature in
+      ForEach(wwdcFeatures.indices, id: \.self) { inedx in
+        let feature = wwdcFeatures[inedx]
         VStack {
           Image(systemName: feature.iconName)
             .font(.system(size: 30))

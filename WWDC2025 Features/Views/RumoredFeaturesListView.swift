@@ -8,26 +8,50 @@ import SwiftUI
 
 struct RumoredFeaturesListView: View {
   var body: some View {
-    VStack(alignment: .leading, spacing: 12) {
-      ForEach(rumoredFeatures, id: \.0) { featureName, iconName, osTag in
-        HStack {
-          Image(systemName: iconName)
-            .foregroundColor(.accentColor)
-            .frame(width: 25)
-          VStack(alignment: .leading) {
-            Text(featureName)
-              .font(.headline)
-            Text(osTag)
-              .font(.caption)
-              .foregroundColor(.secondary)
-          }
-        }
+    LazyVStack(alignment: .leading, spacing: 16) {
+      ForEach(rumoredFeatures.indices, id: \.self) { index in
+        let feature = rumoredFeatures[index]
+        FeatureRow(feature: feature)
       }
     }
     .padding()
-    .background(.thinMaterial)
-    .clipShape(RoundedRectangle(cornerRadius: 15))
-    .shadow(color: .black.opacity(0.1), radius: 5, x: 0, y: 2)
+    .background(.regularMaterial, in: RoundedRectangle(cornerRadius: 16))
+    .shadow(color: .black.opacity(0.08), radius: 8, x: 0, y: 4)
+  }
+}
+
+struct FeatureRow: View {
+  let feature: AppFeature
+  
+  var body: some View {
+    HStack(spacing: 12) {
+      Image(systemName: feature.iconName)
+        .font(.title2)
+        .foregroundStyle(feature.color)
+        .frame(width: 28, alignment: .center)
+      
+      VStack(alignment: .leading, spacing: 2) {
+        Text(feature.name)
+          .font(.subheadline)
+          .fontWeight(.medium)
+        
+        Text(feature.platform.rawValue)
+          .font(.caption)
+          .foregroundStyle(.secondary)
+      }
+      
+      Spacer()
+      
+      if feature.isRumored {
+        Text("RUMORED")
+          .font(.caption2)
+          .fontWeight(.semibold)
+          .foregroundStyle(.orange)
+          .padding(.horizontal, 6)
+          .padding(.vertical, 2)
+          .background(.orange.opacity(0.1), in: Capsule())
+      }
+    }
   }
 }
 

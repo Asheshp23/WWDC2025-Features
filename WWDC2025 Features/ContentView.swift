@@ -27,10 +27,6 @@ struct ContentView: View {
       }
     }
     .padding(.top)
-    .background(
-      LinearGradient(gradient: Gradient(colors: [Color.purple.opacity(0.3), Color.blue.opacity(0.5)]), startPoint: .topLeading, endPoint: .bottomTrailing)
-        .ignoresSafeArea()
-    )
   }
 }
 

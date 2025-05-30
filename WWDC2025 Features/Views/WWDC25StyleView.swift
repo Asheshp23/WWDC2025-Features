@@ -28,7 +28,7 @@ struct WWDC25StyleView: View {
             .fill(LinearGradient(colors: rainbowBorderColors, startPoint: .topTrailing, endPoint: .bottomLeading))
             .hueRotation(.degrees(hueRotateAngle))
             .opacity(1.0 - (Double(index) * 0.05))
-            .shadow(color: .black.opacity(0.08), radius: 5, x: 0, y: 3 + CGFloat(index) * 1.5) // Adjusted shadow
+            .shadow(color: .black.opacity(0.08), radius: 5, x: 0, y: 3 + CGFloat(index) * 1.5)
         }
       }
       .frame(height: maxOuterRadius)
