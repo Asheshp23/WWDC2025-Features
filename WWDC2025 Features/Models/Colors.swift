@@ -5,7 +5,7 @@
 //  Created by Ashesh Patel on 2025-05-20.
 //
 import Foundation
-import SwiftUICore
+import SwiftUI
 
 let wwdcGradientColors: [Color] = [
   Color(red: 0.85, green: 0.5, blue: 0.6).opacity(0.6),  // Darker Soft Pink

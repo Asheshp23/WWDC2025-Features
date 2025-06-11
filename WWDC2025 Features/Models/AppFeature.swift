@@ -5,7 +5,7 @@
 //  Created by Ashesh Patel on 2025-05-20.
 //
 import Foundation
-import SwiftUICore
+import SwiftUI
 
 struct AppFeature {
   let name: String
